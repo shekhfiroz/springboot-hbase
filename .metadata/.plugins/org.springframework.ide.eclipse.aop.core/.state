@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="cyberwatch"/>
+<aop-project name="cw"/>
+<aop-project name="gs-serving-web-content"/>
+<aop-project name="gs-handling-form-submission"/>
+<aop-project name="Spring-Boot-HBase-RESTful-master"/>
+</aop-reference-model>

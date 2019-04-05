@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.google.common.primitives.Bytes"/>
+<fullyQualifiedTypeName name="javax.swing.tree.RowMapper"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.hbase.util.Bytes"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.apache.hadoop.hbase.client.Result"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotEmpty"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.NotEmpty"/>
+<fullyQualifiedTypeName name="com.is.cw.repository.UserRepository"/>
+<fullyQualifiedTypeName name="org.springframework.data.hadoop.hbase.HbaseTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.data.hadoop.hbase.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.data.hadoop.hbase.TableCallback"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.apache.log4j.spi.LoggerFactory"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+<fullyQualifiedTypeName name="com.is.cw.dto.SignUpRequestDto"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.is.cw.dto.LoginRequestDto"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.is.cw.entity.User"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="com.is.cw.service.UserService"/>
+</qualifiedTypeNameHistroy>

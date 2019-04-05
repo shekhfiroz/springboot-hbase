@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Login To cyberwatch</title>
+</head>
+<body>
+	<form th:action="@{/}" th:object:"${LoginForm}" method="post">
+		<label for="username">UserName</label> 
+		<input type="text" id="username" name="username" autofocus="autofoucus" /> <br>
+		 <label for="password">Password</label>
+		  <input type="text" id="password" name="password" autofocus="autofoucus" /> <br> 
+		  <input type="submit" value="LoginIN">
+	</form>
+</body>
+</html>

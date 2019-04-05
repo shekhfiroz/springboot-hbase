@@ -1,0 +1,38 @@
+package com.is.cw.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.is.cw.service.UserService;
+
+@Controller
+public class MainController {
+
+	private static final Logger LOG = LoggerFactory.getLogger(MainController.class);
+
+	private UserService userService;
+
+	public MainController(UserService userService) {
+		this.userService = userService;
+	}
+
+	@GetMapping("/welcome")
+	public String welcome() {
+		LOG.info("Inside Welcome method.");
+		return "welcome";
+		// localhost:8081/home/welcome
+	}
+
+	@GetMapping("/success")
+	public String sucess() {
+		return "success";
+	}
+
+	@GetMapping("/error")
+	public String error() {
+		return "error";
+	}
+}

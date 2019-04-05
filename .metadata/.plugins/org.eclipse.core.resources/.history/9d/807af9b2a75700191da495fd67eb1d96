@@ -1,0 +1,78 @@
+package com.is.cw.controller;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.is.cw.dto.SignUpRequestDto;
+import com.is.cw.entity.User;
+import com.is.cw.service.UserService;
+
+@Controller
+@RequestMapping(value = "/home")
+public class MainController {
+
+	private static final Logger LOG = LoggerFactory.getLogger(MainController.class);
+
+	private UserService userService;
+
+	public MainController(UserService userService) {
+		this.userService = userService;
+	}
+
+	@GetMapping("/welcome")
+	public String welcome() {
+		System.out.println("Inside Welcome method.....");
+		return "welcome";
+		// localhost:8081/home/welcome
+	}
+
+	@GetMapping("/sign-up")
+	public ModelAndView signUp() {
+		ModelAndView mv = new ModelAndView("sign-up");
+		mv.addObject("signUpRequestDto", new SignUpRequestDto());
+		return mv;
+	}
+
+	@PostMapping("/sign-up")
+	public String submitForm(@ModelAttribute SignUpRequestDto signUpRequestDto) {
+		LOG.info("Request Object {}", signUpRequestDto);
+		userService.save(signUpRequestDto);
+		return "success";
+	}
+
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
+
+	/*
+	 * @PostMapping("/login") public String submitForm(@RequestParam @Valid
+	 * SignUpRequestDto request) { return "success"; }
+	 */
+
+	@GetMapping("/user")
+	public ModelAndView getUsers() {
+		List<User> users = userService.getAllUsers();
+		ModelAndView modelAndView = new ModelAndView("user-list");
+		modelAndView.addObject("userList", users);
+		return modelAndView;
+	}
+
+	@GetMapping("/success")
+	public String sucess() {
+		return "success";
+	}
+
+	@GetMapping("/error")
+	public String error() {
+		return "error";
+	}
+}

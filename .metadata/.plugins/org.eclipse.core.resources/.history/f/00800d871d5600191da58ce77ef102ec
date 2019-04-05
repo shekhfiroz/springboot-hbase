@@ -1,0 +1,5 @@
+package com.is.cw.dao;
+
+public class UserRepository {
+
+}

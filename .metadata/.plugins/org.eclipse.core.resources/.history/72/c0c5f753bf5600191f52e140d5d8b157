@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Users Listing</title>
+</head>
+<body>
+	<form action="/user">
+		<h2>Users Listing</h2>
+
+		<div class="row-area" th:each="user ${userList}">
+			<div class="column2 tariff-date" style="width: 20%;">
+				<span th:text="${user.name}"></span>
+			</div>
+			
+			<div class="column2 tariff-date" style="width: 20%;">
+				<span th:text="${user.email}"></span>
+			</div>
+			
+			<div class="column2 tariff-date" style="width: 20%;">
+				<span th:text="${user.password}"></span>
+			</div>
+			
+		</div>
+	</form>
+</body>
+
+</html>

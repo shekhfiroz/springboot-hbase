@@ -1,0 +1,5 @@
+package com.is.cw.dto;
+
+public class LoginRequestDto {
+
+}

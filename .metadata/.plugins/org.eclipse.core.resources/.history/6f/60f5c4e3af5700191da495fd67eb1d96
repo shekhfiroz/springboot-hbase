@@ -1,0 +1,16 @@
+package com.is.cw.service;
+
+import java.util.List;
+
+import com.is.cw.dto.SignUpRequestDto;
+import com.is.cw.entity.User;
+
+public interface UserService {
+
+	public List<User> getAllUsers();
+	
+	public User save(SignUpRequestDto request);
+}
+
+
+
